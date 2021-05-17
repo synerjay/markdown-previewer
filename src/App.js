@@ -3,8 +3,8 @@ import Editor from './components/Editor';
 import Preview from './components/Preview';
 
 function App() {
+  // Editor Text Input State
   const [inputValue, setInputValue] = useState(placeholder);
-
   const editorValueChange = (e) => {
     setInputValue(e.target.value);
   };
@@ -23,9 +23,9 @@ const placeholder = `
   # Header 1
   ## Header 2
 
-  _ italic _
+  _italic_
 
-  ** bold **
+  **bold**
 
   <b> bold Html </b>
   `;
