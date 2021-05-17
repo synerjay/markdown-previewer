@@ -20,12 +20,33 @@ function App() {
 export default App;
 
 const placeholder = `
-  # Header 1
-  ## Header 2
+Welcome to my Markdown Previewer App!
 
-  _italic_
+This is a paragraph
 
-  **bold**
+**This is a bolded text**
 
-  <b> bold Html </b>
-  `;
+> Block Quotes!
+
+# Heading
+## Heading 2
+
+- list item 1
+- list item 2
+- list item 3
+
+[Visit my website](https://codepen.io/synerjay/full/rNLjEJe)
+
+This is an inline code \`<div></div>\`
+
+This is a block of code:
+
+\`\`\`
+  let x = 1;
+  let y = 2;
+  let z = x + y;
+\`\`\`
+
+![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
+
+`;
