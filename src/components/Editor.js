@@ -17,7 +17,7 @@ function Editor({ editorValueChange, input }) {
             </li>
           </ul>
         </div>
-        <div className='window-right'>EDITOR</div>
+        <div className='editor-text'>EDITOR</div>
       </div>
       <div className='screen'>
         <textarea

@@ -48,6 +48,7 @@ div.screen {
   height: 430px;
   background: #fff;
   padding-top: 30px;
+  overflow: scroll;
 }
 .screen textarea {
   width: 100%;
@@ -57,6 +58,11 @@ div.screen {
   border: none;
   background: #000;
   color: #fff;
+  padding-left: 10px;
+}
+
+.screen .Preview {
+  padding-left: 10px;
 }
 
 .window-action {
@@ -99,9 +105,15 @@ div.screen {
     }
   }
 }
-.window-right {
+.editor-text {
   position: absolute;
-  right: 45%;
+  right: 40%;
+  top: 25%;
+  padding: 0 20px;
+}
+.preview-text {
+  position: absolute;
+  right: 37%;
   top: 25%;
   padding: 0 20px;
 }

@@ -13,8 +13,26 @@ function Preview({ input }) {
   }
 
   return (
-    <div className='PreviewContainer'>
-      <div className='Preview' dangerouslySetInnerHTML={createMarkup()} />
+    <div className='window'>
+      <div className='top-bar'>
+        <div className='window-action'>
+          <ul>
+            <li>
+              <a href=''></a>
+            </li>
+            <li>
+              <a href=''></a>
+            </li>
+            <li>
+              <a href=''></a>
+            </li>
+          </ul>
+        </div>
+        <div className='preview-text'>PREVIEWER</div>
+      </div>
+      <div className='screen'>
+        <div className='Preview' dangerouslySetInnerHTML={createMarkup()} />
+      </div>
     </div>
   );
 }
