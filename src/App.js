@@ -1,7 +1,11 @@
+import Editor from './components/Editor';
+import Preview from './components/Preview';
+
 function App() {
   return (
     <div className='App'>
-      <h2> Hello. This is the future site of the Markdown Previewer</h2>
+      <Editor />
+      <Preview />
     </div>
   );
 }
