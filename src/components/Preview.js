@@ -7,29 +7,14 @@ marked.setOptions({
 
 const renderer = new marked.Renderer();
 
-function Preview() {
-  const markdown = `
-  # Header 1
-  ## Header 2
-
-  _ italic _
-
-  ** bold **
-
-  <b> bold Html </b>
-  `;
-
+function Preview({ input }) {
   function createMarkup() {
-    return { __html: marked(markdown, renderer) };
+    return { __html: marked(input, renderer) };
   }
 
   return (
     <div className='PreviewContainer'>
-      <div
-        className='Preview'
-        className='markdown'
-        dangerouslySetInnerHTML={createMarkup()}
-      />
+      <div className='Preview' dangerouslySetInnerHTML={createMarkup()} />
     </div>
   );
 }
