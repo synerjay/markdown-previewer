@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.Preview {
+  min-width: 20rem;
+  min-height: 25rem;
+}
+
+.window {
+  margin: 20px auto;
+  position: relative;
+  background: #fff;
+  width: 40vw;
+  min-height: 430px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+div.top-bar {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(#dddddd, #c7c7c7);
+  width: 100%;
+}
+div.screen {
+  display: block;
+  width: 40vw;
+  height: 430px;
+  background: #fff;
+  padding-top: 30px;
+}
+.screen textarea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.window-action {
+  padding: 0 20px;
+  ul {
+    position: relative;
+    top: 3px;
+    padding: 0;
+    margin: 10px 0;
+    display: block;
+    list-style: none;
+    li {
+      margin: 0 3px;
+      display: block;
+      line-height: 50px;
+      background: #333;
+      width: 15px;
+      height: 15px;
+      border-radius: 100px;
+      display: inline-block;
+      transition: all 0.1s ease;
+      &:nth-of-type(1) {
+        background: #e36e6b;
+        &:hover {
+          background: darken(#e36e6b, 10%);
+        }
+      }
+      &:nth-of-type(2) {
+        background: #debb43;
+        &:hover {
+          background: darken(#debb43, 10%);
+        }
+      }
+      &:nth-of-type(3) {
+        background: #36d489;
+        &:hover {
+          background: darken(#36d489, 10%);
+        }
+      }
+    }
+  }
+}
+.window-right {
+  position: absolute;
+  right: 45%;
+  top: 25%;
+  padding: 0 20px;
+}
