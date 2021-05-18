@@ -9,6 +9,12 @@ function App() {
     setInputValue(e.target.value);
   };
 
+  // Single Window State
+
+  // Show Editor State
+
+  // Show Previewer State
+
   return (
     <div className='App'>
       <Editor input={inputValue} editorValueChange={editorValueChange} />

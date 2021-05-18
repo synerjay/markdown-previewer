@@ -6,15 +6,9 @@ function Editor({ editorValueChange, input }) {
       <div className='top-bar'>
         <div className='window-action'>
           <ul>
-            <li>
-              <a href=''></a>
-            </li>
-            <li>
-              <a href=''></a>
-            </li>
-            <li>
-              <a href=''></a>
-            </li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
         <div className='editor-text'>EDITOR</div>
