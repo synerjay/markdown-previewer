@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Editor({ editorValueChange, input }) {
+function Editor({ editorValueChange, input, resizeWindow }) {
   return (
     <div className='window'>
       <div className='top-bar'>
@@ -8,7 +8,7 @@ function Editor({ editorValueChange, input }) {
           <ul>
             <li></li>
             <li></li>
-            <li></li>
+            <li onClick={resizeWindow}></li>
           </ul>
         </div>
         <div className='editor-text'>EDITOR</div>

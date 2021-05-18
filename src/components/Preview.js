@@ -7,7 +7,7 @@ marked.setOptions({
 
 const renderer = new marked.Renderer();
 
-function Preview({ input }) {
+function Preview({ input, resizeWindow }) {
   function createMarkup() {
     return { __html: marked(input, renderer) };
   }
@@ -17,15 +17,9 @@ function Preview({ input }) {
       <div className='top-bar'>
         <div className='window-action'>
           <ul>
-            <li>
-              <a href=''></a>
-            </li>
-            <li>
-              <a href=''></a>
-            </li>
-            <li>
-              <a href=''></a>
-            </li>
+            <li></li>
+            <li></li>
+            <li onClick={resizeWindow}></li>
           </ul>
         </div>
         <div className='preview-text'>PREVIEWER</div>

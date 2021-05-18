@@ -48,8 +48,21 @@ function App() {
 
   return (
     <div className='App' style={singleWindowMode ? singleWindowStyle : null}>
-      <Editor input={inputValue} editorValueChange={editorValueChange} />
-      <Preview input={inputValue} />
+      {showEditor && (
+        <Editor
+          input={inputValue}
+          editorValueChange={editorValueChange}
+          resizeWindow={singleWindowMode ? minimizeEditor : maximizeEditor}
+        />
+      )}
+      {showPreviewer && (
+        <Preview
+          input={inputValue}
+          resizeWindow={
+            singleWindowMode ? minimizePreviewer : maximizePreviewer
+          }
+        />
+      )}
     </div>
   );
 }
