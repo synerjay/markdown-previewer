@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Editor({ editorValueChange, input, resizeWindow, minimizeOnClick }) {
+function Editor({
+  editorValueChange,
+  input,
+  resizeWindow,
+  minimizeOnClick,
+  addStyles,
+}) {
   return (
-    <div className='window'>
+    <div className='window' style={addStyles}>
       <div className='top-bar'>
         <div className='window-action'>
           <ul>

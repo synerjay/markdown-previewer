@@ -46,6 +46,11 @@ function App() {
     setShowEditor(true);
   };
 
+  const maximizeWindowStyle = {
+    width: '100%',
+    height: '100%',
+  };
+
   return (
     <div className='App' style={singleWindowMode ? singleWindowStyle : null}>
       {showEditor && (
@@ -56,6 +61,9 @@ function App() {
             !singleWindowMode ? maximizePreviewer : minimizeEditor
           }
           resizeWindow={singleWindowMode ? minimizeEditor : maximizeEditor}
+          addStyles={
+            showEditor && singleWindowMode ? maximizeWindowStyle : null
+          }
         />
       )}
       {showPreviewer && (
@@ -66,6 +74,9 @@ function App() {
           }
           resizeWindow={
             singleWindowMode ? minimizePreviewer : maximizePreviewer
+          }
+          addStyles={
+            showPreviewer && singleWindowMode ? maximizeWindowStyle : null
           }
         />
       )}

@@ -7,13 +7,13 @@ marked.setOptions({
 
 const renderer = new marked.Renderer();
 
-function Preview({ input, resizeWindow, minimizeOnClick }) {
+function Preview({ input, resizeWindow, minimizeOnClick, addStyles }) {
   function createMarkup() {
     return { __html: marked(input, renderer) };
   }
 
   return (
-    <div className='window'>
+    <div className='window' style={addStyles}>
       <div className='top-bar'>
         <div className='window-action'>
           <ul>
