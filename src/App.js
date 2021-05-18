@@ -9,14 +9,45 @@ function App() {
     setInputValue(e.target.value);
   };
 
-  // Single Window State
+  // Single Window Mode
+  const [singleWindowMode, setSingleWindowMode] = useState(false);
+
+  const singleWindowStyle = {
+    display: 'grid',
+    gridTemplateRows: '1fr',
+    gridTemplateColumns: '1fr',
+    justifyContent: null,
+    alignItems: null,
+  };
 
   // Show Editor State
+  const [showEditor, setShowEditor] = useState(true);
+
+  const maximizeEditor = () => {
+    setSingleWindowMode(true);
+    setShowPreviewer(false);
+  };
+
+  const minimizeEditor = () => {
+    setSingleWindowMode(false);
+    setShowPreviewer(true);
+  };
 
   // Show Previewer State
+  const [showPreviewer, setShowPreviewer] = useState(true);
+
+  const maximizePreviewer = () => {
+    setSingleWindowMode(true);
+    setShowEditor(false);
+  };
+
+  const minimizePreviewer = () => {
+    setSingleWindowMode(false);
+    setShowEditor(true);
+  };
 
   return (
-    <div className='App'>
+    <div className='App' style={singleWindowMode ? singleWindowStyle : null}>
       <Editor input={inputValue} editorValueChange={editorValueChange} />
       <Preview input={inputValue} />
     </div>
