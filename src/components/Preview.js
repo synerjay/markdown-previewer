@@ -7,7 +7,7 @@ marked.setOptions({
 
 const renderer = new marked.Renderer();
 
-function Preview({ input, resizeWindow }) {
+function Preview({ input, resizeWindow, minimizeOnClick }) {
   function createMarkup() {
     return { __html: marked(input, renderer) };
   }
@@ -17,8 +17,8 @@ function Preview({ input, resizeWindow }) {
       <div className='top-bar'>
         <div className='window-action'>
           <ul>
-            <li></li>
-            <li></li>
+            <li onClick={minimizeOnClick}></li>
+            <li onClick={minimizeOnClick}></li>
             <li onClick={resizeWindow}></li>
           </ul>
         </div>

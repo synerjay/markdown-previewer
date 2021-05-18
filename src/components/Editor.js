@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Editor({ editorValueChange, input, resizeWindow }) {
+function Editor({ editorValueChange, input, resizeWindow, minimizeOnClick }) {
   return (
     <div className='window'>
       <div className='top-bar'>
         <div className='window-action'>
           <ul>
-            <li></li>
-            <li></li>
+            <li onClick={minimizeOnClick}></li>
+            <li onClick={minimizeOnClick}></li>
             <li onClick={resizeWindow}></li>
           </ul>
         </div>

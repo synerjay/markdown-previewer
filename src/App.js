@@ -52,12 +52,18 @@ function App() {
         <Editor
           input={inputValue}
           editorValueChange={editorValueChange}
+          minimizeOnClick={
+            !singleWindowMode ? maximizePreviewer : minimizeEditor
+          }
           resizeWindow={singleWindowMode ? minimizeEditor : maximizeEditor}
         />
       )}
       {showPreviewer && (
         <Preview
           input={inputValue}
+          minimizeOnClick={
+            !singleWindowMode ? maximizeEditor : minimizePreviewer
+          }
           resizeWindow={
             singleWindowMode ? minimizePreviewer : maximizePreviewer
           }
