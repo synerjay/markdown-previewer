@@ -25,7 +25,7 @@ function Preview({ input, resizeWindow, minimizeOnClick, addStyles }) {
         <div className='preview-text'>PREVIEWER</div>
       </div>
       <div className='screen'>
-        <div className='Preview' dangerouslySetInnerHTML={createMarkup()} />
+        <div className='markdown' dangerouslySetInnerHTML={createMarkup()} />
       </div>
     </div>
   );
