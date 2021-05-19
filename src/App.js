@@ -87,20 +87,37 @@ function App() {
 export default App;
 
 const placeholder = `
-Welcome to my Markdown Previewer App!
+Hi! I'm Jerome and welcome to my Markdown Previewer App!
 
-This is a paragraph
+A markdown previewer is an app that parses markdown code into HTML styles. 
 
-**This is a bolded text**
+Try it out yourself! 
 
-> Block Quotes!
+# How to Use
+
+On the editor panel, type in the markdown code that you want to see on the preview panel on the right.
+
+Try the markdown code below to check it out! 
+
+**To get a bolded text, type in these asterisks**
+
+> An arrow key character makes block Quotes!
+> You can have several lines of these
+> As many as you can!
+> As many as you want!
+> Isn't it cool?
+
+To make a heading, try the sharp key as so!
 
 # Heading
 ## Heading 2
+### Heading 3
 
-- list item 1
-- list item 2
-- list item 3
+To make bullet points, it's as simple as: 
+- One!
+- Two! 
+- Three!
+- Easy, right?
 
 [Visit my website](https://codepen.io/synerjay/full/rNLjEJe)
 
