@@ -87,6 +87,8 @@ function App() {
 export default App;
 
 const placeholder = `
+# Markdown Previewer App
+
 Hi! I'm Jerome and welcome to my Markdown Previewer App!
 
 A markdown previewer is an app that parses markdown code into HTML styles. 
@@ -119,11 +121,12 @@ To make bullet points, it's as simple as:
 - Three!
 - Easy, right?
 
-[Visit my website](https://codepen.io/synerjay/full/rNLjEJe)
+You can even include images like these from the internet! Wow! 
+![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
 
-This is an inline code \`<div></div>\`
+To include programming code, try typing these: \`<div></div>\`
 
-This is a block of code:
+If you want to include mulitple lines, you can do so by doing these: 
 
 \`\`\`
   let x = 1;
@@ -131,6 +134,6 @@ This is a block of code:
   let z = x + y;
 \`\`\`
 
-![React](https://logos-download.com/wp-content/uploads/2016/09/React_logo_small.png)
+I hope you learn something about the fun things you can do with Markdown! If you enjoyed, please visit  [my Github](https://synerjay.github.com)
 
 `;
